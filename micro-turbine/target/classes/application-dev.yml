@@ -1,0 +1,25 @@
+server:
+  port: 9002
+
+management:
+  port: 9012
+
+spring:
+  application:
+    name: TurbineServer9002
+
+eureka:
+  instance:
+    leaseRenewalIntervalInSeconds: 10
+    non-secure-port: ${PORT:9002}
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:7001/eureka/
+
+turbine:
+  appConfig: catologapi,catologweb,catologwap
+  aggregator:
+    clusterConfig: default
+  clusterNameExpression: new String("default")
+
+

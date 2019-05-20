@@ -1,0 +1,26 @@
+---
+server: 
+  port: 7001
+
+spring:
+  #profiles:
+   # active: dev
+  application:
+    # 显示的名字为Application名
+    name: EurekaServer7001
+
+eureka:
+  instance:
+    hostname: EurekaServerInstance7001
+    # 是否使用Ip注册
+    preferIpAddress: true
+    # ipAddress: localhost:7001
+  client:
+    # 是否想服务注册中心注册
+    registerWithEureka: true
+    # 是否检索服务
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://localhost:7002/eureka/
+      
+spring.cloud.config.discovery.enable: true

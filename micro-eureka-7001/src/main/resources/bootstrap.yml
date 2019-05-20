@@ -1,0 +1,8 @@
+spring:
+  cloud:
+    config:
+      name: micro-eureka7001
+      # 本次访问的配置项   
+      profile: dev
+      label: master
+      uri: http://configserver5001.com:5001

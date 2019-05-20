@@ -1,0 +1,19 @@
+---
+server:
+  port: 5001
+
+spring:
+  application:
+    name: ConfigServer5001
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/NikolaZhang/microservice-config.git
+  
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:7001/eureka
+
+management.security.enabled: false
