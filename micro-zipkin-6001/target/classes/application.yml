@@ -1,0 +1,15 @@
+server:
+  port: 6001
+
+spring:
+  application:
+    name: ZipkinServer6001
+  sleuth:
+    # 不对本身跟踪
+    enabled: false
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:7001/eureka/
+management.metrics.web.server.auto-time-requests: false

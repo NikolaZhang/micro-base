@@ -2,10 +2,10 @@ server:
   port: 3001
 eureka:
   instance:
-    preferIpAddress:true
+    preferIpAddress: true
   client:
     serviceUrl:
-      defaultZone: http://localhost:7001/eureka
+      defaultZone: http://localhost:7001/eureka/
 spring:
   application:
     name: Zuul3001

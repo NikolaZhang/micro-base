@@ -1,18 +1,21 @@
 server:
-    port: 3001
-
+  port: 3001
 eureka:
-    client:
-        serviceUrl:
-            defaultZone: http://localhost:7001/eureka/
+  instance:
+    preferIpAddress:true
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:7001/eureka
 spring:
-    application:
-        name: Zuul3001
-zuul:                    
+  application:
+    name: Zuul3001
+zuul: 
+  prefix: /nikola                   
   routes:
     ribbon:
       path: /ribbonClass/**
       serviceId: GateView8001
     feign:
       path: /feignClass/**
+      serviceId: GateView8001
  

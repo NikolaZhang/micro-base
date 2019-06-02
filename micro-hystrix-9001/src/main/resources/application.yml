@@ -1,0 +1,12 @@
+server:
+  port: 9001
+
+eureka:
+  instance:
+    preferIpAddress: true
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:7001/eureka/
+spring:
+  application:
+    name: HystrixDashboard9001

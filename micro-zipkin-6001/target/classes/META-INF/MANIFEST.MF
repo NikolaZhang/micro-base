@@ -4,8 +4,7 @@ Implementation-Version: 0.0.1-SNAPSHOT
 Built-By: NikolaZhang
 Implementation-Vendor-Id: com.nikola
 Build-Jdk: 1.8.0_201
-Implementation-URL: http://projects.spring.io/spring-boot/micro-base/m
- icro-zipkin-6001/
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/micro-base/micro-zipkin-6001
 Created-By: Maven Integration for Eclipse
-Implementation-Vendor: Pivotal Software, Inc.
 

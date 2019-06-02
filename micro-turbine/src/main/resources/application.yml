@@ -9,15 +9,12 @@ spring:
     name: TurbineServer9002
 
 eureka:
-  instance:
-    leaseRenewalIntervalInSeconds: 10
-    non-secure-port: ${PORT:9002}
   client:
     serviceUrl:
       defaultZone: http://localhost:7001/eureka/
 
 turbine:
-  appConfig: catologapi,catologweb,catologwap
+  appConfig: ZUUL3001,RESTAPI,GATEVIEW8001
   aggregator:
     clusterConfig: default
   clusterNameExpression: new String("default")
