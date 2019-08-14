@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="micro-config-5001" />
+        <module name="micro-eureka-7001" />
+        <module name="micro-eureka-7002" />
+        <module name="micro-hystrix-9001" />
+        <module name="micro-turbine" />
+        <module name="micro-zipkin-6001" />
+        <module name="micro-zuul-3001" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="micro-base" target="1.8" />
+      <module name="micro-config-5001" target="1.8" />
+      <module name="micro-eureka-7001" target="1.8" />
+      <module name="micro-eureka-7002" target="1.8" />
+      <module name="micro-hystrix-9001" target="1.8" />
+      <module name="micro-turbine" target="1.8" />
+      <module name="micro-zipkin-6001" target="1.8" />
+      <module name="micro-zuul-3001" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="micro-config-5001" options="-parameters" />
+      <module name="micro-eureka-7001" options="-parameters" />
+      <module name="micro-eureka-7002" options="-parameters" />
+      <module name="micro-hystrix-9001" options="-parameters" />
+      <module name="micro-turbine" options="-parameters" />
+      <module name="micro-zipkin-6001" options="-parameters" />
+      <module name="micro-zuul-3001" options="-parameters" />
+    </option>
+  </component>
+</project>
